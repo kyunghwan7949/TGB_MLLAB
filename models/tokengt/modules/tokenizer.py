@@ -314,6 +314,7 @@ class GraphFeatureTokenizer(nn.Module):
         # node_feature = torch.tensor(node_feature, device=device)
         
         edge_time_feature = edge_feature + time_feature
+        tmp =3
 
         padded_index, padded_feature, padding_mask, _, _ = self.get_batch(
             node_feature, edge_index, edge_time_feature, node_num, edge_num, perturb
